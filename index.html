@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kidney Disease Detection</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">Kidney Disease Detection System</h2>
+
+    <div class="card mt-4">
+      <div class="card-header bg-primary text-white">
+        Enter Your Medical Details
+      </div>
+      <div class="card-body">
+        <form id="kidney-form">
+          <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" class="form-control" id="age" required>
+          </div>
+
+          <div class="form-group">
+            <label for="bp">Blood Pressure (mm Hg):</label>
+            <input type="number" class="form-control" id="bp" required>
+          </div>
+
+          <div class="form-group">
+            <label for="sugar">Blood Sugar Level (mg/dL):</label>
+            <input type="number" class="form-control" id="sugar" required>
+          </div>
+
+          <div class="form-group">
+            <label for="creatinine">Serum Creatinine Level (mg/dL):</label>
+            <input type="number" class="form-control" id="creatinine" required>
+          </div>
+
+          <div class="form-group">
+            <label for="albumin">Albumin Level (g/dL):</label>
+            <input type="number" class="form-control" id="albumin" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Check for Kidney Disease</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card mt-4">
+      <div class="card-header bg-success text-white">
+        Prediction Result
+      </div>
+      <div class="card-body">
+        <h5 id="result-message" class="text-center">Fill out the form to get a prediction</h5>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
